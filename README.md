@@ -1,2 +1,0 @@
-# hugservice
-HaaS at scale
