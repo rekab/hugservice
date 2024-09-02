@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUG-O-MATIC 3000: SUBSCRIBE NOW OR REGRET FOREVER!!!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        .pulse { animation: pulse 2s infinite; }
+        .shake { animation: shake 0.5s infinite; }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 flex items-center justify-center min-h-screen">
+    <div class="bg-gradient-to-b from-fuchsia-300 to-purple-400 p-8 rounded-lg shadow-lg max-w-lg w-full border-8 border-blue-500 transform rotate-1">
+        <h1 class="text-5xl font-black mb-4 text-center text-red-600 uppercase bg-green-300 p-2 transform -rotate-2 pulse">HUG-O-MATIC 3000!</h1>
+        <h2 class="text-3xl font-bold mb-4 text-center text-blue-600 bg-yellow-200 p-2 transform rotate-1 shake">REVOLUTIONARY VIRTUAL HUG TECHNOLOGY!!!</h2>
+        <p class="mb-4 text-black font-black text-center text-3xl bg-red-400 p-2 blink">🚨 ONCE-IN-A-LIFETIME OFFER! 🚨</p>
+        <ul class="list-disc pl-6 mb-4 text-black font-bold bg-cyan-300 p-2 space-y-2">
+            <li class="text-xl">Get 1000% MORE HUGS than your WILDEST DREAMS!</li>
+            <li class="text-xl">GUARANTEED to make you VOMIT WITH JOY or QUADRUPLE your money back!</li>
+            <li class="text-xl">ACT NOW and receive our PLATINUM HUG AMPLIFIER absolutely FREE!</li>
+        </ul>
+        <form class="space-y-4">
+            <input type="email" placeholder="ENTER YOUR EMAIL OR MISS OUT FOREVER!" class="w-full px-3 py-2 border-4 border-purple-600 rounded-md text-center font-black bg-orange-300 text-purple-800 shake">
+            <div class="flex items-center bg-lime-300 p-2">
+                <input type="checkbox" id="consent" class="mr-2 h-8 w-8">
+                <label for="consent" class="text-lg text-black font-bold">I CRAVE HUGS LIKE A CACTUS CRAVES WATER!</label>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-red-600 to-pink-600 text-white py-4 rounded-md hover:from-red-700 hover:to-pink-700 transition duration-300 text-3xl font-black uppercase border-4 border-yellow-400 pulse">FLOOD MY LIFE WITH HUGS NOW!</button>
+        </form>
+        <p class="mt-4 text-base text-black font-bold text-center bg-pink-300 p-2">By subscribing, you agree to be DROWNED in VIRTUAL HUGS 25/8! We are not responsible for EXTREME HAPPINESS!</p>
+        <p class="mt-2 text-2xl font-black text-center text-white bg-purple-600 p-2 shake">OPERATORS ARE STANDING BY! CALL NOW!</p>
+        <p class="text-center text-4xl font-black bg-yellow-400 p-2 text-red-600 pulse">(800) HUG-NOW!!!</p>
+    </div>
+    <script>
+        setInterval(() => {
+            document.querySelector('.blink').style.visibility = 
+                document.querySelector('.blink').style.visibility === 'hidden' ? 'visible' : 'hidden';
+        }, 500);
+    </script>
+</body>
+</html>
