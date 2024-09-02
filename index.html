@@ -37,7 +37,7 @@
             <li class="text-xl">GUARANTEED to make you VOMIT WITH JOY or QUADRUPLE your money back!</li>
             <li class="text-xl">ACT NOW and receive our PLATINUM HUG AMPLIFIER absolutely FREE!</li>
         </ul>
-        <form class="space-y-4">
+        <form id="hugForm" class="space-y-4">
             <input type="email" placeholder="ENTER YOUR EMAIL OR MISS OUT FOREVER!" class="w-full px-3 py-2 border-4 border-purple-600 rounded-md text-center font-black bg-orange-300 text-purple-800 shake">
             <div class="flex items-center bg-lime-300 p-2">
                 <input type="checkbox" id="consent" class="mr-2 h-8 w-8">
@@ -45,6 +45,7 @@
             </div>
             <button type="submit" class="w-full bg-gradient-to-r from-red-600 to-pink-600 text-white py-4 rounded-md hover:from-red-700 hover:to-pink-700 transition duration-300 text-3xl font-black uppercase border-4 border-yellow-400 pulse">FLOOD MY LIFE WITH HUGS NOW!</button>
         </form>
+        <p id="errorMessage" class="mt-4 text-lg font-bold text-center text-red-700 bg-yellow-200 p-2 hidden">SORRY! This offer is not available to residents of Colorado with a nursing degree!</p>
         <p class="mt-4 text-base text-black font-bold text-center bg-pink-300 p-2">By subscribing, you agree to be DROWNED in VIRTUAL HUGS 25/8! We are not responsible for EXTREME HAPPINESS!</p>
         
         <div class="flex justify-center my-4">
@@ -59,6 +60,11 @@
             document.querySelector('.blink').style.visibility = 
                 document.querySelector('.blink').style.visibility === 'hidden' ? 'visible' : 'hidden';
         }, 500);
+
+        document.getElementById('hugForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('errorMessage').classList.remove('hidden');
+        });
     </script>
 </body>
 </html>
